@@ -310,9 +310,13 @@ const Homepage = () => {
             </p>
           </div>
 
-           {/* Bento Grid Pipeline Steps */}
-           <div className="relative max-w-6xl mx-auto">
-             <div className="grid grid-cols-4 grid-rows-3 gap-4 mb-16 h-96">
+            {/* Bento Grid Pipeline Steps */}
+            <div className="relative max-w-6xl mx-auto">
+              {/* Enhanced Background Effects */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/3 to-secondary/5 rounded-3xl blur-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-tl from-accent/10 via-transparent to-primary/10 rounded-3xl"></div>
+              
+              <div className="relative grid grid-cols-4 grid-rows-3 gap-6 mb-16 h-[32rem] p-4">
                {pipelineSteps.map((step, index) => {
                  const Icon = step.icon;
                  // Define Bento grid sizes - some cards are larger
