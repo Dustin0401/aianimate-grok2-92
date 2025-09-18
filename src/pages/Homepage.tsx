@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import { Play, Sparkles, Zap, Palette, Video, Music, Mic, Brain, Wand2, Users, Star, ArrowRight, CheckCircle, Timer, Layers, Cpu, ImageIcon, MessageSquare, Download, TrendingUp, Award, Globe } from "lucide-react";
 import { useEffect, useState } from "react";
 import Navigation from "@/components/Navigation";
-import Spline from '@splinetool/react-spline';
 import heroBanner from "@/assets/hero-banner.jpg";
 import mascotCharacter from "@/assets/mascot-character.jpg";
 import characterGallery from "@/assets/character-gallery.jpg";
@@ -196,9 +195,16 @@ const Homepage = () => {
       <section className="relative pt-24 pb-20 px-6 min-h-screen flex items-center">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
         
-        {/* Spline Animation Background */}
-        <div className="absolute inset-0 z-0 opacity-40">
-          <Spline scene="https://prod.spline.design/animatedshapeblend-72QGP4SrmgFLm69wxmuKCZdI/scene.splinecode" />
+        {/* Animated Background */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-secondary/10">
+            {/* Floating Orbs Animation */}
+            <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-primary/30 to-accent/30 rounded-full blur-xl animate-pulse" />
+            <div className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-br from-accent/25 to-secondary/25 rounded-full blur-lg animate-bounce" style={{ animationDuration: '3s' }} />
+            <div className="absolute bottom-32 left-1/4 w-40 h-40 bg-gradient-to-br from-secondary/20 to-primary/20 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }} />
+            <div className="absolute top-1/3 right-1/3 w-20 h-20 bg-gradient-to-br from-primary/35 to-accent/35 rounded-full blur-md animate-bounce" style={{ animationDuration: '4s', animationDelay: '0.5s' }} />
+            <div className="absolute bottom-20 right-10 w-28 h-28 bg-gradient-to-br from-accent/30 to-secondary/30 rounded-full blur-lg animate-pulse" style={{ animationDelay: '2s' }} />
+          </div>
         </div>
         
         <div className="container mx-auto text-center relative z-10">
