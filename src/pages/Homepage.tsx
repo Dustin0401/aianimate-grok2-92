@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import { Play, Sparkles, Zap, Palette, Video, Music, Mic, Brain, Wand2, Users, Star, ArrowRight, CheckCircle, Timer, Layers, Cpu, ImageIcon, MessageSquare, Download, TrendingUp, Award, Globe } from "lucide-react";
 import { useEffect, useState } from "react";
 import Navigation from "@/components/Navigation";
-import Spline from '@splinetool/react-spline';
 import heroBanner from "@/assets/hero-banner.jpg";
 import mascotCharacter from "@/assets/mascot-character.jpg";
 import characterGallery from "@/assets/character-gallery.jpg";
@@ -196,12 +195,53 @@ const Homepage = () => {
       <section className="relative pt-24 pb-20 px-6 min-h-screen flex items-center">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
         
-        {/* Spline Animation Background */}
-        <div className="absolute inset-0 z-0 opacity-30">
-          <Spline 
-            scene="https://prod.spline.design/animatedshapeblend-72QGP4SrmgFLm69wxmuKCZdI/scene.splinecode"
-            style={{ width: '100%', height: '100%' }}
-          />
+        {/* Beautiful Animated Background */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/3 to-secondary/5">
+            {/* Morphing Gradient Blobs */}
+            <div 
+              className="absolute w-96 h-96 bg-gradient-to-br from-primary/20 via-accent/15 to-primary/10 rounded-full blur-3xl animate-pulse opacity-60"
+              style={{ 
+                top: '10%', 
+                left: '5%',
+                transform: 'rotate(45deg)',
+                animation: 'pulse 4s ease-in-out infinite, float 8s ease-in-out infinite alternate'
+              }}
+            />
+            <div 
+              className="absolute w-80 h-80 bg-gradient-to-tr from-accent/25 via-secondary/15 to-accent/20 rounded-full blur-2xl animate-bounce opacity-50"
+              style={{ 
+                top: '20%', 
+                right: '10%',
+                animationDuration: '6s',
+                animationDelay: '1s'
+              }}
+            />
+            <div 
+              className="absolute w-64 h-64 bg-gradient-to-bl from-secondary/30 via-primary/20 to-accent/15 rounded-full blur-xl animate-pulse opacity-40"
+              style={{ 
+                bottom: '15%', 
+                left: '20%',
+                animationDelay: '2s',
+                animationDuration: '5s'
+              }}
+            />
+            <div 
+              className="absolute w-72 h-72 bg-gradient-to-tl from-primary/25 via-accent/30 to-secondary/20 rounded-full blur-2xl animate-bounce opacity-35"
+              style={{ 
+                bottom: '25%', 
+                right: '15%',
+                animationDuration: '7s',
+                animationDelay: '0.5s'
+              }}
+            />
+            {/* Subtle Particle Effect */}
+            <div className="absolute inset-0 opacity-20">
+              <div className="absolute w-2 h-2 bg-primary rounded-full animate-ping" style={{ top: '30%', left: '25%', animationDelay: '1s' }} />
+              <div className="absolute w-1 h-1 bg-accent rounded-full animate-ping" style={{ top: '60%', left: '70%', animationDelay: '3s' }} />
+              <div className="absolute w-1.5 h-1.5 bg-secondary rounded-full animate-ping" style={{ top: '80%', left: '40%', animationDelay: '2s' }} />
+            </div>
+          </div>
         </div>
         
         <div className="container mx-auto text-center relative z-10">
