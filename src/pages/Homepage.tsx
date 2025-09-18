@@ -197,7 +197,7 @@ const Homepage = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
         
         {/* Spline Animation Background */}
-        <div className="absolute inset-0 z-0 opacity-30">
+        <div className="absolute inset-0 z-0 opacity-40">
           <Spline scene="https://prod.spline.design/animatedshapeblend-72QGP4SrmgFLm69wxmuKCZdI/scene.splinecode" />
         </div>
         
