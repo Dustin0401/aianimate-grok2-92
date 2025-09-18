@@ -201,10 +201,10 @@ const Homepage = () => {
           <Spline scene="https://prod.spline.design/qOI6puHASLq-LuFU/scene.splinecode" />
         </div>
         
-        <div className="container mx-auto text-center relative z-10 mt-16">
+        <div className="container mx-auto text-center relative z-10 mt-32">
           <div className="max-w-6xl mx-auto">
 
-            <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-8 fade-in font-creepster">
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8 fade-in">
               Create Epic Stories with
               <span className="gradient-text-rainbow block mt-4">AI Magic</span>
             </h1>
