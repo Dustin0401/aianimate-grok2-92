@@ -201,7 +201,7 @@ const Homepage = () => {
           <Spline scene="https://prod.spline.design/qOI6puHASLq-LuFU/scene.splinecode" />
         </div>
         
-        <div className="container mx-auto text-center relative z-10 mt-32">
+        <div className="container mx-auto text-center relative z-10 mt-48">
           <div className="max-w-6xl mx-auto">
 
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8 fade-in">
